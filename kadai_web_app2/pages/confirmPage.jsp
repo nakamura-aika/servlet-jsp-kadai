@@ -27,7 +27,7 @@
 		</tr>
 		<tr>
 			<td>電話番号</td>
-			<td>${tell}</td>
+			<td>${phone_number}</td>
 		</tr>
 	</table>
 	<p>

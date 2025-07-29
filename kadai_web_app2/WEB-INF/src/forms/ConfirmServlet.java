@@ -15,15 +15,15 @@ public class ConfirmServlet extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html; charset=UTF-8");
 		
-		String name = request.getParameter("user_name");
-		String email = request.getParameter("user_email");
-		String address = request.getParameter("user_address");
-		String tell = request.getParameter("user_tell");
+		String name = request.getParameter("name");
+		String email = request.getParameter("email");
+		String address = request.getParameter("address");
+		String phone_number = request.getParameter("phone_number");
 		
 		request.setAttribute("name", name);
 		request.setAttribute("email", email);
 		request.setAttribute("address", address);
-		request.setAttribute("tell", tell);
+		request.setAttribute("phone_number", phone_number);
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/pages/confirmPage.jsp");
 		dispatcher.forward(request, response);
